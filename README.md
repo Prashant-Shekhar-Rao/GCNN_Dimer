@@ -95,7 +95,7 @@ V = 0.6
 t=-1.0
 req_char = 0
 pickle_path = "saved_states/171_state_nLayers_2_nCh_4_2_t_-1.0_V_0.6_reqchar_0_L_8_iters_passed_1100_chunkSize_4096.pickle"
-#603 is the job id and should be ignored.
+#171 is the job id and should be ignored.
 #Every variable except the chunk size and iters_passed must match with the filename.
 #If you are trying this without a GPU, then it would take some time.
 n_discard_per_chain=400
