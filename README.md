@@ -59,7 +59,7 @@ python momentum_gcnn.py 8 0.6 2 2 2000 50
 
 For the ground state
 ```bash
-python momentum_gcnn.py 8 0.8 0 2 2000 500
+python momentum_gcnn.py 8 0.8 0 2 2000 100
 ```
 
 ### Other parameters
