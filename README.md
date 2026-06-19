@@ -24,7 +24,7 @@ pip install --no-deps -r requirements.txt
 
 `requirements.txt` has the exact version number for each package. We don't recommend using newer packages as they are liable to break things.
 
-If you don't have a Nvidia GPU you can still evaluate the energies by installing from `requirements_no_gpu.txt`
+If you don't have an Nvidia GPU you can still evaluate the energies by installing from `requirements_no_gpu.txt`.
 ## Training
 
 `momentum_gcnn.py` is used to train the neural network; it requires six parameters.
@@ -96,7 +96,7 @@ t=-1.0
 req_char = 0
 pickle_path = "saved_states/171_state_nLayers_2_nCh_4_2_t_-1.0_V_0.6_reqchar_0_L_8_iters_passed_1100_chunkSize_4096.pickle"
 #171 is the job id and should be ignored.
-#Every variable except the chunk size and iters_passed must match with the filename.
+#Every variable except chunk_size and iters_passed must match with the filename.
 #If you are trying this without a GPU, then it would take some time.
 n_discard_per_chain=400
 chunk_size=256
@@ -162,7 +162,7 @@ L = 12
 req_char = 2
 pickle_path = "saved_states/603_state_nLayers_2_nCh_4_2_t_-1.0_V_0.6_reqchar_2_L_12_iters_passed_1550_chunkSize_256.pickle"  # Path to your saved weights.
 #603 is the job id and should be ignored.
-#Every variable except the chunk size and iters_passed must match with the filename.
+#Every variable except chunk_size and iters_passed must match with the filename.
 
 lattice = nk.graph.Square(L, max_neighbor_order=1)
 ct_full = lattice.space_group().character_table()
@@ -199,7 +199,7 @@ psi = jnp.exp(log_psi)
 
 print(f"Log Amplitude: {log_psi[0]}")
 print(f"Amplitude psi(sigma): {psi[0]}")
-print(f"Unormalized probability |psi|^2: {jnp.abs(psi[0])**2}")
+print(f"Unnormalized probability |psi|^2: {jnp.abs(psi[0])**2}")
 ```
 ## Citations
 
